@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Itim', cursive;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  .header-area {
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.5)),
+    url(https://www.google.com/imgres?imgurl=https%3A%2F%2Fkidsbest.co.il%2Fwp-content%2Fuploads%2F2020%2F05%2Fboardgame_mobil.jpg&imgrefurl=https%3A%2F%2Fkidsbest.co.il%2Fproduct-category%2F%25D7%259E%25D7%25A9%25D7%2597%25D7%25A7%25D7%2599%25D7%259D%2F%25D7%259E%25D7%25A9%25D7%2597%25D7%25A7%25D7%2599-%25D7%25A7%25D7%2595%25D7%25A4%25D7%25A1%25D7%2590%2Fpage%2F7%2F&tbnid=ZiNJrzYuQ-1bTM&vet=12ahUKEwjQ3dfwkPL8AhVwXaQEHVg8D0UQMygAegUIARCCAg..i&docid=Xmbts99Oj4niEM&w=416&h=194&q=%D7%9E%D7%A9%D7%97%D7%A7&ved=2ahUKEwjQ3dfwkPL8AhVwXaQEHVg8D0UQMygAegUIARCCAg);
+    background-position: center center;
+    background-size: cover;
+  }
+
+
+  .container-intro {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  /* intro-area css start */
+.intro-area {
+  height: calc(100vh - 61px);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+
+@keyframes text-animation{
+  from {color: black;}
+  to {color: white;}
+}
+.intro-area h2 {
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 50px;
+  margin-bottom: 25px;
+  animation-name: text-animation;
+  animation-duration: 1s;
+}
+.intro-area p {
+  font-size: 18px;
+}
+/* intro-area css end */
+
+  
+  @media screen and (max-width: 600px) {
+      .container{
+          display: flex;
+          align-items:center;
+          justify-content: center;
+      }
+      .gallery-item {
+          border: 0.5px solid #ccc;
+          width: 300px;
+          height: auto;
+          position: relative;
+        }
+        .container-intro {
+          max-width: 720px;
+        }
+        .intro-area h2 {
+          font-size: 36px;
+          margin-bottom: 15px;
+        } 
+  }
+
+    
+  
+  
